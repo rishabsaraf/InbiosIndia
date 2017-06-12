@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns= "http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inbios India</title>
+	<link rel="icon" href="../favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="../w3.css">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="w3-top fixedHeader">
+	<!--main logo-->
+	<img src="../top_logo.png" class="headerLogo" height="60px"/>
+
+	<!-- Navigation bar-->
+	<div id="header" class="w3-bar w3-top">
+		<a id="contactUs" href="../contact" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-right w3-hover-text-grey">Contact Us</a>
+		<a id="products" href="../products" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-hover-text-grey w3-right">Products</a>
+		<a id="partners" href="" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-right selected">Our Partners</a>
+		<a id="aboutUs" href="../about" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-hover-text-grey w3-right">About Us</a>
+		<a id="home" href= "../" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-hover-text-grey w3-right">Home</a>
+		<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-teal" onclick="headerDropDown()">&#9776;</a>
+	</div>
+	<div id="headerDropDown" class="w3-bar-block w3-white w3-hide w3-hide-large">
+		<a id="home" href= "../" class="w3-bar-item w3-text-teal w3-right w3-hover-text-grey w3-center">Home</a>
+		<a id="aboutUs" href="../about" class="w3-bar-item w3-text-teal w3-hover-text-grey w3-center">About Us</a>
+		<a id="partners" href="" class="w3-bar-item w3-text-teal w3-hover-text-grey w3-center">Our Partners</a>
+		<a id="products" href="../products" class="w3-bar-item w3-text-teal w3-hover-text-grey w3-center">Products</a>
+		<a id="contactUs" href="../contact" class="w3-bar-item w3-text-teal w3-hover-text-grey w3-center">Contact Us</a>
+	</div>
+
+	<script src="../menu.js"></script>
+	<!--Navigation bar ends-->
+</div>
+
+<div class="bodyContainer">
+  <div class="w3-row-padding w3-margin-top">
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-2 w3-center partnerCard">
+        <img src="Inbios.png" class="partnerImage" onclick="onClick(this, 'inbiosDesc')">
+        <div class="w3-container">
+          <h4 class="w3-teal">Inbios International Inc</h4>
+          <p style="display:none;" id="inbiosDesc">InBios is a leading biotechnology company based in Seattle, Washington (USA). They specialize in the design, development, and manufacture of immunodiagnostic devices for infectious diseases. As such, they have specifically targeted those diseases that afflict tens of millions of people worldwide. They serve the global public marketplace by providing superior quality products that are accurate, easy to use and cost effective. They offer an impressive line of FDA cleared and USDA licensed products
+					</p>
+					<a href="http://www.inbios.com/" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-2 w3-center partnerCard">
+        <img src="Fuller.png" class="partnerImage" onclick="onClick(this, 'fullerDesc')">
+        <div class="w3-container">
+          <h4 class="w3-teal">Fuller Laboratories</h4>
+					<p style="display:none;" id="fullerDesc">Fuller Laboratories develops both clinical and veterinary assays for the diagnosis of vector-borne  and zoonotic diseases. For more than 2 decades, Fuller Laboratories has been an innovator in the development of infectious disease serology products, delivering unique formats in ever-increasing sophistication. Fuller Laboratories products offer the sensitivity, specificity and repeatability that reference laboratories demand. Their IFA, MIF and EIA Product Lines are available in kit formats (IVD) and individual component form
+					</p>
+					<a href="http://www.fullerlaboratories.com/products/clinical/international/ " target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-2 w3-center partnerCard">
+        <img src="DiaPro.png" class="partnerImage" onclick="onClick(this,'diaproDesc')">
+        <div class="w3-container">
+          <h4 class="w3-teal">Dia Pro Diagnostic BioProbes SRL</h4>
+					<p style="display:none;" id="diaproDesc">Dia.Pro Diagnostic Bioprobes srl develops, manufactures & markets a wide range of high-quality & trusted branded IVD’s. The company is dedicated to providing innovative & cost effective in-vitro diagnostic products, whilst upholding the quality set by the European Directive 98/79/CE for (IVDD), ISO 13485:2003 and other International Standards of Excellence.
+					</p>
+					<a href="https://www.diapro.it/index.php/products" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="w3-row-padding w3-margin-top">
+		<div class="w3-third w3-margin-bottom">
+			<div class="w3-card-2 w3-center partnerCard">
+				<img src="NovaTec.png" class="partnerImage" onclick="onClick(this, 'novatecDesc')">
+				<div class="w3-container">
+					<h4 class="w3-teal">NovaTec Immundiagnostica GmbH</h4>
+					<p style="display:none;" id="novatecDesc">NovaTec Immundiagnostica GmbH started out by developing and manufacturing ELISA products for the diagnosis of infectious diseases (NovaLisa). Over the years, in order to meet the needs and demands of our customers, we found the need to expand our product line outside of the infectious diseases field of expertise. 
+					</p>
+					<a href="http://www.novatec-id.com/products/" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-third w3-margin-bottom">
+			<div class="w3-card-2 w3-center partnerCard">
+				<img src="Scimedx.png" class="partnerImage" onclick="onClick(this, 'scimedxDesc')">
+				<div class="w3-container">
+					<h4 class="w3-teal">Scimedx</h4>
+					<p style="display:none;" id="scimedxDesc">Scimedx are a highly flexible diagnostic company, with over 25 years in the medical diagnostic industry. Specializing in immunofluorescence, ELISA ,and membrane technologies for autoimmune and infectious diseases, offering an extensive test menu of assays.
+					</p>
+					<a href="http://www.scimedx.com/services/" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-third w3-margin-bottom">
+			<div class="w3-card-2 w3-center partnerCard">
+				<img src="Savyon.png" class="partnerImage" onclick="onClick(this,'savyonDesc')">
+				<div class="w3-container">
+					<h4 class="w3-teal">Savyon Diagnostics</h4>
+					<p style="display:none;" id="savyonDesc">Savyon Diagnostics is a member of the Gamida for Life group of companies, based in the Netherlands, which is engaged in Healthcare related operations worldwide. Savyon Diagnostics develops, manufactures and markets high quality diagnostic kits and systems for the detection of Infectious Diseases and Genetic Screening for more than　30 years through a worldwide network of over 80 distributors.
+					</p>
+					<a href="http://www.savyondiagnostics.com/?CategoryID=45" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w3-row-padding w3-margin-top">
+		<div class="w3-third w3-margin-bottom">
+			<div class="w3-card-2 w3-center partnerCard">
+				<img src="AssayPro.png" class="partnerImage" onclick="onClick(this, 'assayProDesc')">
+				<div class="w3-container">
+					<h4 class="w3-teal">Assaypro</h4>
+					<p style="display:none;" id="assayProDesc">Assaypro is dedicated to providing high quality immunological assay kits and reagents to the researchers in both academia and pharmaceutical/biotech industry. Our product lines include AssayLiteTM Rapid Series, AssayLiteTM Extreme Series, AssayMax ELISA kits, AssaySense Chromogenic Activity kits, antibodies, and other related reagents.
+					</p>
+					<a href="https://assaypro.com/Products/ProductType" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-third w3-margin-bottom">
+			<div class="w3-card-2 w3-center partnerCard">
+				<img src="Immunolab.png" class="partnerImage" onclick="onClick(this, 'immunoDesc')">
+				<div class="w3-container">
+					<h4 class="w3-teal">Immunolab</h4>
+					<p style="display:none;" id="immunoDesc">Immunolab manufactures highly sensitive and specific immuno-diagnostics and analytical reagents in compliance with current quality standards. The company and its processes are certified according to ISO 9001 und ISO 13485.
+					</p>
+					<a href="http://www.immunolab.de/products/clinical-diagnostics/" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-third w3-margin-bottom">
+			<div class="w3-card-2 w3-center partnerCard">
+				<img src="Certest.png" class="partnerImage" onclick="onClick(this,'certestDesc')">
+				<div class="w3-container">
+					<h4 class="w3-teal">Certest Biotec</h4>
+					<p style="display:none;" id="certestDesc">Certest Biotec, S.L. is an independent biotechnology company devoted to the development and manufacturing of IVD diagnostic products in human clinical field. Our Rapid Test are based in a fast, reliable and easy-interpretation process. In addition, VIASURE contains a wide range of products for Real Time PCR that allow to identify the causal pathogens of the infectious diseases in physicians’ offices, labs and hospitals.
+					</p>
+					<a href="http://www.certest.es/ivd-productos/" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w3-row-padding w3-margin-top">
+		<div class="w3-third w3-margin-bottom">
+			<div class="w3-card-2 w3-center partnerCard">
+				<img src="MyBiosource.png" class="partnerImage" onclick="onClick(this, 'biosourceDesc')">
+				<div class="w3-container">
+					<h4 class="w3-teal">MyBioSource</h4>
+					<p style="display:none;" id="biosourceDesc">MyBioSource can produce ELISA Kits for a wide range of targets and species. If you cannot find the target and/or species that you require then please submit your request. Custom ELISA Kit manufacture is also available; kits can be designed and produced to the user's specifications.
+					</p>
+					<a href="https://www.mybiosource.com/" target="_blank"><h4 class="w3-dark-gray">Visit website</h4></a>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-text-white w3-black w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-white">
+      <img id="img01" style="max-width:60%;max-height:200px;">
+      <p id="imgDesc" class="w3-justify w3-padding"></p>
+    </div>
+  </div>
+  <script>
+    function onClick(element, contentId) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("imgDesc").innerHTML = document.getElementById(contentId).innerHTML;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
+</div>
+
+<div class="footer w3-text-gray">
+	<p>
+		Copyright &copy;2017 Inbios.
+	</p>
+</div>
+</body>
+</html>

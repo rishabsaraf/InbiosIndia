@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns= "http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>Inbios India</title>
+	<link rel="icon" href="../favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="../w3.css">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="w3-top fixedHeader">
+	<!--main logo-->
+	<img src="../top_logo.png" class="headerLogo" height="60px"/>
+
+	<!-- Navigation bar-->
+	<div id="header" class="w3-bar w3-top">
+		<a id="contactUs" href="" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-right selected">Contact Us</a>
+		<a id="products" href="../products" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-hover-text-grey w3-right">Products</a>
+		<a id="partners" href="../partners" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-hover-text-grey w3-right">Our Partners</a>
+		<a id="aboutUs" href="../about" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-hover-text-grey w3-right">About Us</a>
+		<a id="home" href= "../" class="w3-bar-item w3-text-teal w3-hide-medium w3-hide-small w3-hover-text-grey w3-right">Home</a>
+		<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-teal" onclick="headerDropDown()">&#9776;</a>
+	</div>
+	<div id="headerDropDown" class="w3-bar-block w3-white w3-hide w3-hide-large">
+		<a id="home" href= "../" class="w3-bar-item w3-text-teal w3-right w3-hover-text-grey w3-center">Home</a>
+		<a id="aboutUs" href="../about" class="w3-bar-item w3-text-teal w3-hover-text-grey w3-center">About Us</a>
+		<a id="partners" href="../partners" class="w3-bar-item w3-text-teal w3-hover-text-grey w3-center">Our Partners</a>
+		<a id="products" href="../products" class="w3-bar-item w3-text-teal w3-hover-text-grey w3-center">Products</a>
+		<a id="contactUs" href="" class="w3-bar-item w3-text-teal w3-center selected">Contact Us</a>
+	</div>
+
+	<script src="../menu.js"></script>
+	<!--Navigation bar ends-->
+</div>
+
+<div class="bodyContainer">
+	<div class="w3-card-4" id="mapCard">
+		<div id="map">
+		</div>
+		<script>
+			function initMap() {
+				var office = {lat: 28.619365, lng: 77.033148};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 15,
+					center: office
+				});
+				var marker = new google.maps.Marker({
+					position: office,
+					map: map
+				});
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBElILnAuBY-QtbozZMqB_CAp_gihiNbVw&callback=initMap">
+		</script>
+		<div class="w3-container w3-center w3-text-dark-grey">
+			<p>
+				Inbios India, C-48, UGF, Sewak Park, Uttam Nagar, New Delhi – 110059 <br/>
+				Contact no: +91-11-68888485
+			</p>
+		</div>
+	</div>
+	<br/>
+	<div class="w3-cell-row">
+		<div class="w3-container w3-cell w3-mobile">
+			<div class="w3-card-4">
+				<header class="w3-container w3-dark-grey w3-center w3-text-white">
+					<h3>Naresh Saraf</h3>
+				</header>
+				<div class="w3-container card-content">
+					<!--img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px"-->
+					<p>
+						Designation: Proprietor <br/>
+						Contact no: +91-8826274949 <br/>
+						Email: naresh@inbiosindia.com
+					</p>
+				</div>
+  		</div>
+		</div>
+		<div class="w3-container w3-cell w3-mobile">
+			<div class="w3-card-4">
+				<header class="w3-container w3-dark-grey w3-center w3-text-white">
+					<h3>Gaurav Saraf</h3>
+				</header>
+				<div class="w3-container card-content">
+					<!--img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px"-->
+					<p>
+						Designation: Proprietor <br/>
+						Contact no: +91-9821193636 <br/>
+						Email: gaurav@inbiosindia.com
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<div class="w3-center">
+		<p>
+			For orders and queries, mail us at:
+			<p class="w3-text-teal">info@inbiosindia.com / sales@inbiosindia.com</p>
+			<br/>
+		</p>
+	</div>
+</div>
+
+<div class="footer w3-text-gray">
+	<p>
+		Copyright &copy;2017 Inbios.
+	</p>
+</div>
+</body>
+</html>
