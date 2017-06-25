@@ -102,3 +102,8 @@ a {
 .partnerCard {
   padding: 20px;
 }
+
+.servicesImg {
+  max-width: 300px;
+  width: 100%;
+}
